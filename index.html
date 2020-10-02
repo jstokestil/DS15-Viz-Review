@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <title>DS15 Viz Review</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <br />
+      <div class="titleContainer"><h1>🐱‍💻DS15 Tableau Public Review😎</h1>
+
+      <div class="subtitleContainer">
+        <h3 id="subtitle">The Most and Least viewed dashboards from DS15!</h3>
+      </div></div>
+
+      <br />
+      <h3 class="nameText">Nathan Leather🤡</h3>
+      <div id="showhidebuttons">
+        <div class="buttonContainer">
+          <div class="buttonCenter">
+            <div class="personName"></div>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="hideVizNath"
+              style="display: none"
+            >
+              Hide Viz
+            </button>
+            <button type="button" class="btn btn-primary" id="showVizNath">
+              Show Viz
+            </button>
+            <button type="button" class="btn btn-danger" id="swapVizNath">
+              See Least Viewed
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              id="swapViz2Nath"
+              style="display: none"
+            >
+              See Most Viewed
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="vizContainerNath"
+        class="vizContainer"
+        style="display: none"
+      ></div></div>
+      <br />
+      <hr />
+      <h3 class="nameText">Georgie Grgec🥝</h3>
+      <div id="showhidebuttons">
+        <div class="buttonContainer">
+          <div class="buttonCenter">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="hideVizGeorgie"
+              style="display: none"
+            >
+              Hide Viz
+            </button>
+            <button type="button" class="btn btn-primary" id="showVizGeorgie">
+              Show Viz
+            </button>
+            <button type="button" class="btn btn-danger" id="swapVizGeorgie">
+              See Least Viewed
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              id="swapViz2Georgie"
+              style="display: none"
+            >
+              See Most Viewed
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="vizContainerGeorgie" class="vizContainer" style="display: none"></div>
+      <br />
+      <hr />
+      <h3 class="nameText">Jose Valero🤑</h3>
+      <div id="showhidebuttons">
+        <div class="buttonContainer">
+          <div class="buttonCenter">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="hideVizJose"
+              style="display: none"
+            >
+              Hide Viz
+            </button>
+            <button type="button" class="btn btn-primary" id="showVizJose">
+              Show Viz
+            </button>
+            <button type="button" class="btn btn-danger" id="swapVizJose">
+              See Least Viewed
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              id="swapViz2Jose"
+              style="display: none"
+            >
+              See Most Viewed
+            </button>
+          </div>
+          <div id="vizContainerJose" class="vizContainer" style="display: none"></div>
+          <br />
+          <hr />
+          <h3 class="nameText">Sarah Jellenc🤠</h3>
+          <div id="showhidebuttons">
+            <div class="buttonContainer">
+              <div class="buttonCenter">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="hideVizSarah"
+                  style="display: none"
+                >
+                  Hide Viz
+                </button>
+                <button type="button" class="btn btn-primary" id="showVizSarah">
+                  Show Viz
+                </button>
+                <button type="button" class="btn btn-danger" id="swapVizSarah">
+                  See Least Viewed
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="swapViz2Sarah"
+                  style="display: none"
+                >
+                  See Most Viewed
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="vizContainerSarah" class="vizContainer" style="display: none"></div>
+          <br />
+          <hr />
+          <h3 class="nameText">Ben Wells🧠</h3>
+          <div id="showhidebuttons">
+            <div class="buttonContainer">
+              <div class="buttonCenter">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  id="hideVizBen"
+                  style="display: none"
+                >
+                  Hide Viz
+                </button>
+                <button type="button" class="btn btn-primary" id="showVizBen">
+                  Show Viz
+                </button>
+                <button type="button" class="btn btn-primary" id="swapVizBen">
+                  See Least Viewed
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="swapViz2Ben"
+                  style="display: none"
+                >
+                  See Most Viewed
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="vizContainerBen" class="vizContainer" style="display: none"></div>
+          <br />
+          <hr />
+          <h3 class="nameText">Ruth Armateifio🏡</h3>
+          <div id="showhidebuttons">
+            <div class="buttonContainer">
+                <div class="buttonCenter">
+            <button
+              type="button"
+              class="btn btn-success"
+              id="hideVizRuth"
+              style="display: none"
+            >
+              Hide Viz
+            </button>
+            <button type="button" class="btn btn-primary" id="showVizRuth">
+              Show Viz
+            </button>
+            <button type="button" class="btn btn-danger" id="swapVizRuth">
+              See Least Viewed
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              id="swapViz2Ruth"
+              style="display: none"
+            >
+              See Most Viewed
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="vizContainerRuth" class="vizContainer" style="display: none"></div>
+      <br />
+      <hr />
+      <h3 class="nameText">Joe Stokes🙉</h3>
+      <div id="showhidebuttons">
+        <div class="buttonContainer">
+          <div class="buttonCenter">
+            <button
+              type="button"
+              class="btn btn-success"
+              id="hideVizJoe"
+              style="display: none"
+            >
+              Hide Viz
+            </button>
+            <button type="button" class="btn btn-primary" id="showVizJoe">
+              Show Viz
+            </button>
+            <button type="button" class="btn btn-danger" id="swapVizJoe">
+              See Least Viewed
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="swapViz2Joe"
+              style="display: none"
+            >
+              See Most Viewed
+            </button>
+          </div>
+        </div>
+    </div>
+      
+      <div id="vizContainerJoe" class="vizContainer" style="display: none"></div>
+        
+      <br />
+      <br />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

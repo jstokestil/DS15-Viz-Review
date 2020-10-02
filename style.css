@@ -1,0 +1,65 @@
+body {
+  background-color: #333333;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+#subtitle {
+  text-align: center;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+hr {
+  color: whitesmoke;
+}
+
+.buttonCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  clear: both;
+}
+
+.personName {
+  display: block;
+}
+
+.vizContainer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  clear: both;
+  margin: auto;
+}
+
+.nameText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  clear: both;
+  padding-bottom: 5px;
+}
+
+.views {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  clear: both;
+  padding-bottom: 5px;
+}
